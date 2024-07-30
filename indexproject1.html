@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggressive and Progressive Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        
+       body{ /* css reset */
+        margin:0px;
+        padding:0px;
+        background:url(img/pexels-pixabay-260352.jpg);
+        height:900px;
+        /* background-size: contain; */
+        
+        /* background-size: cover; */
+
+        /* no repeat is used to prevent multiple images of same  */
+        background-repeat: no-repeat;
+        
+        
+    
+        font-family: 'Ubuntu', sans-serif; }
+
+        /* inline block in below code used to represent data in a row means linewise */
+        
+        .left{
+            /* border: 3px solid red; */
+            /* margin: 8px;
+            float: left;
+            width: 34px; */
+            display: inline-block;
+            /* position: absolute; */
+            position: fixed;
+            left: 34px;
+            top: 20px; 
+            text-align: center;
+            color: #0c1601;
+        }
+
+        .left img{
+            width: 60px;
+            /* filter: invert(100%);......This is used when the image is black u want top turn it into white and the vice-versa..*/
+
+            /* text-align: left;....This will not show any resulyt becoz no text is there in the img section */
+        }
+        .mid{
+            /* border: 3px solid rgb(60, 63, 60); */
+             margin: 20px auto;
+            /* float: left;
+             */ 
+             display:block;
+             width: 39%;
+           }
+
+        .right{
+            /* border: 3px solid rgb(125, 211, 26); */
+            /* margin: 8px;
+            float: right; */
+            display: inline-block;
+            /* position: absolute; */
+            position: fixed;
+            right: 34px;
+            top:20px ; }
+
+
+            .navbar{
+                display: inline-block;
+            }
+            .navbar li{
+                display: inline-block;
+                font-size: 20px;
+
+            }
+
+            .navbar li a {
+                text-decoration: none;
+                /* color: black;...u can give this command to chang the color of a elements */
+                padding: 23px 10px;
+                color:#1a4c76;
+    
+            }
+            .navbar li a:hover,.navbar li a.active{
+                color: green;
+                text-decoration: underline;
+            }
+            .btn{
+                padding: 8px;
+                border-radius: 89px;
+                cursor: pointer;
+                font-family: 'Ubuntu', sans-serif;
+                
+            }
+            .btn:hover{
+                background-color:orange;
+
+   
+            }
+            .container{
+                border: 3px solid  #1031d7;
+                width: 223px;
+                border-radius: 7px;
+                margin: 72px;
+                /* margin: auto;....tHIS IS USED TO MOVE THE CONTAINER TOWARDS CENTER */
+                 padding: 104px;
+
+            }
+          label{
+            background-color:  #dfdfe7;
+            border-radius: 23px;
+            padding: 2px;
+           
+          
+            /* margin: 0px 35px ;.......This is used to move the name of labels toward the centre according to this website or u can say to move right side */
+            
+            }
+            input{
+                background-color:rgb(220 227 221);;
+                border-radius: 89px;
+                margin: 7px;
+                text-align: center;
+                padding: 4px;
+                
+            }
+            .details button{
+                background-color:rgb(152 160 177);
+
+            }
+            
+    </style>
+</head>
+<body>
+    <header class="header">
+    <!-- div with class left for logo -->
+    <div class="left">
+        <img src="img/jack.jpg" alt="">
+        <div>A$G Fitness</div>
+
+    
+    </div>
+    
+    
+    
+    <!-- div with class mid for navigation bar -->
+    <div class="mid">
+        <nav class="navbar">
+            <ul>
+                <li><a href="H" class="active">Home</a></li>
+                <li><a href="H">About us</a></li>
+                <li><a href="H">Fitness Calculator</a></li>
+                <li><a href="H">Contact Us</a></li>
+   
+            </ul>
+        </nav>
+
+
+    </div>
+    
+    
+    
+    
+    <!-- div with class right for buttons like search etc -->
+    <div class="right"> 
+        <button class="btn">Feedback</button>
+        
+        <button class="btn">Email Us</button>
+        
+    </div>
+    <div class="container">
+
+        <h1>Join A$P Gym</h1>
+
+        <form action="noaction.php">
+
+        <label for="34">Name</label>
+        <div class="details">
+            
+     <input type="text" Name="" id="34" placeholder="Enter your Name">
+
+        </div>
+
+        <label for="4567">Gender</label>
+         <div>
+            Male <input type="radio" name="My gender" id="4567">FeMale <input type="radio" name="My gender"
+                id="4567">Other <input type="radio" name="My gender" id="4567">
+            </div>
+
+
+<label for="35">Age</label>
+        <div class="details"><input type="number" Name="" id="35" placeholder="Enter your age"></div>
+
+<label for="36">Weight(in kg)</label>
+        <div class="details"><input type="number" Name="" id="36" placeholder="Enter your Weight"></div>
+
+        <label for="37">Height(in feets)</label>
+        <div class="details"><input type="number" Name=""  id="37"placeholder="Enter your Height"></div>
+
+        <label for="38">Phone Number</label>
+        <div class="details"><input type="number" Name="" id="38" placeholder="Enter your Phone number"></div>
+        
+        <div class="details">
+             <button class="btn">Submit</button>
+            </div>
+    </div>
+
+</form>
+
+  
+   
+    
+</header>   
+</body>
+</html>
